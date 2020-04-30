@@ -20,12 +20,33 @@
 //   function myFunction() {
 //   document.getElementById("LinkDisplay").style.display="block" ;
 // }
-// $("i").click(function ()){
+// $("i").click(function (){
 //
-//   $(".hamburger-menu").addClass("visible")
+//   $(".hamburger-menu").addClass(".active")
 // })
-// .click(function() {
-//     // il mouse è uscito dal cerchio
-//     // nascondere la scritta => togliere la classe 'visibile'
-//     $('.cerchio h1').removeClass('visible');
-// })
+$(".header-right > a").click(function() {
+
+  $(".hamburger-menu").addClass('active');
+})
+$(".close").click(function() {
+
+  $(".hamburger-menu").removeClass('active');
+})
+// // const hamburgerMenu = document.querySelector("hamburger-menu")
+
+// Individuiamo l´elemento da clickare x visualizzare il menu hamburger
+// $(".header-right > a ").click(function (){
+//
+//   $(".hamburger-menu").show();
+//
+//
+// });
+//
+// //Individuiamo l´elemento da clickare x nascondere il menu hamburger
+//
+// $(".close ").click(function (){
+//
+//   $(".hamburger-menu").hide();
+//
+//
+// });
